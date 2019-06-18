@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>{{ article["PRODUCT"] }} </h1>
+<p><img src="{{ article["IMGURL"] }}" width="400"/></p>
+<h2>{{ article["PRICE_VAT"]|round }} Kč</h2>
+<p>{{ article["DESCRIPTION"] }}</p>
+<h3>{{ article["CATEGORYTEXT"] }}</h3>
+
+<div class="clear"></div>
+{% endblock %}
+
+

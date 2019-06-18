@@ -1,0 +1,13 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+blog_list:
+    # Matches /blog exactly
+    path:     /
+    controller: App\Controller\BlogController::list
+
+blog_show:
+    # Matches /blog/*
+    # but not /blog/slug/extra-part
+    path:     /article
+    controller: App\Controller\BlogController::detail
